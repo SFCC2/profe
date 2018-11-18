@@ -25,7 +25,7 @@
                 <div class="form-group">
                     <label for="pass">Password</label>
                     <input type="password" class="form-control" id="pass" aria-describedby="passHelp" placeholder="Ingrese su clave">
-                    <small id="passHelp" class="form-text text-muted">Especifique su usuario para ingresar al sistema</small>
+                    <small id="passHelp" class="form-text text-muted">Especifique su clave para ingresar al sistema</small>
                 </div>
                 <button type="submit" class="btn btn-primary">CONECTAR</button>
 
