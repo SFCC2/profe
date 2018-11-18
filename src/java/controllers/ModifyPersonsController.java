@@ -1,5 +1,5 @@
 /*
- * Copyright 2018 undernode.
+ * Copyright 2018 Sulay2016.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,30 +17,20 @@ package controllers;
 
 import interfaces.ATGSController;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
- * 
- * @author undernode
- * 
- * Controlador para inicio de sesión
- * 
+ *
+ * @author Sulay2016
  */
 
 @Controller
-public class LoginController implements ATGSController {
-    
-    @Override
-    @RequestMapping("login.html")
-    public ModelAndView showView()
-    {
-        
-        ModelAndView view = new ModelAndView();
-        
-        view.setViewName("login");
 
-        return view;
+public class ModifyPersonsController implements ATGSController{
+
+    @Override
+    public ModelAndView showView() {
+        return null;
     }
     
 }
