@@ -37,9 +37,22 @@
                 
                 <prop key="editarArchivo.html">editarArchivosController</prop> 
                 <prop key="editarEmpresa.html">editarEmpresasController</prop>                  
-                 <prop key="editarInvetario.html">editarInventariosController</prop> 
+                <prop key="editarInvetario.html">editarInventariosController</prop> 
                 <prop key="editarPersona.html">editarPersonassController</prop>                 
-                <prop key="editarProyecto.html">editarProyectossController</prop>                 
+                <prop key="editarProyecto.html">editarProyectossController</prop> 
+                
+                <prop key="eliminarArchivo.html">eliminarArchivosController</prop>  
+                <prop key="eliminarEmpresa.html">eliminarEmpresasController</prop>   
+                <prop key="eliminarInventario.html">eliminarInventariosController</prop>
+                <prop key="eliminarProyecto.html">eliminarProyectosController</prop> 
+                
+                 <prop key="listarArchivo.html">listarArchivosController</prop> 
+                <prop key="listarEmpresa.html">listarEmpresasController</prop>                  
+                <prop key="listarInventario.html">listarInventariosController</prop> 
+                <prop key="listarPersona.html">listarPersonassController</prop>                 
+                <prop key="listarProyecto.html">listarProyectossController</prop> 
+                
+                                                                
             </props>
         </property>
     </bean>
@@ -83,5 +96,25 @@
     <bean name="editarPersonassController" class="controllers.UploadPersonaController"/> 
     <!-- contorlado para manejar el recurso 'editarProyecto.html' -->
     <bean name="editarProyectossController" class="controllers.UploadProyectoController"/>     
-
+    
+    <!-- contorlado para manejar el recurso 'eliminarArchivos.html' -->
+    <bean name="eliminarArchivosController" class="controllers.DeleteArchivoController"/>    
+    <!-- contorlado para manejar el recurso 'eliminarEmpresa.html' --> 
+    <bean name="eliminarEmpresasController" class="controllers.DeleteEmpresaController"/>         
+    <!-- contorlado para manejar el recurso 'eliminarInventario.html' --> 
+    <bean name="eliminarInventariosController" class="controllers.DeleteInventarioController"/>          
+    <!-- contorlado para manejar el recurso 'eliminarProyecto.html' --> 
+    <bean name="eliminarProyectosController" class="controllers.DeleteProyectoController"/> 
+    
+     <!-- contorlado para manejar el recurso 'listarArchivos.html' -->
+    <bean name="listarArchivosController" class="controllers.ChecklistArchivoController"/>     
+    <!-- contorlado para manejar el recurso 'listarEmpresa.html' -->
+    <bean name="listarEmpresasController" class="controllers.ChecklistEmpresaController"/>         
+    <!-- contorlado para manejar el recurso 'listarInvetario.html' -->
+    <bean name="listarInventariosController" class="controllers.ChecklistInventarioController"/>     
+    <!-- contorlado para manejar el recurso 'listarPersona.html' -->
+    <bean name="listarPersonassController" class="controllers.ChecklistPersonaController"/> 
+    <!-- contorlado para manejar el recurso 'listarProyecto.html' -->
+    <bean name="listarProyectossController" class="controllers.ChecklistProyectoController"/>  
+    
 </beans>
