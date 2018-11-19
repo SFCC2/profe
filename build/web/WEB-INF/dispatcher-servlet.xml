@@ -28,7 +28,18 @@
                 <prop key="index.html">indexController</prop>
                 <prop key="login.html">loginController</prop>
                 <prop key="viewpersons.html">getPersonsController</prop>
+                
                 <prop key="agregarPersona.html">aPersonsController</prop>
+                <prop key="agregarEmpresa.html">agregarEmpresaController</prop>
+                <prop key="agregarArchivos.html">agregarArchivoaController</prop>
+                <prop key="agregarProyecto.html">agregarProyectosController</prop>
+                <prop key="agregarInventario.html">agregarInventariosController</prop>
+                
+                <prop key="editarArchivo.html">editarArchivosController</prop> 
+                <prop key="editarEmpresa.html">editarEmpresasController</prop>                  
+                 <prop key="editarInvetario.html">editarInventariosController</prop> 
+                <prop key="editarPersona.html">editarPersonassController</prop>                 
+                <prop key="editarProyecto.html">editarProyectossController</prop>                 
             </props>
         </property>
     </bean>
@@ -49,9 +60,28 @@
     <!-- Controlador para manejar el recurso 'login.html' -->
     <bean name="loginController" class="controllers.LoginController"/>
     <!-- Controlador para manejar el recurso 'viewpersons.html' -->
+    
     <bean name="getPersonsController" class="controllers.GetPersonsController"/>    
     <!-- Controlador para manejar el recurso 'agregarPersona.html' -->
     <bean name="aPersonsController" class="controllers.AddPersonsController"/> 
-    
-    
+    <!-- contorlado para manejar el recurso 'agregarEmpresa.html' -->
+    <bean name="agregarEmpresaController" class="controllers.AddEmpresaController"/>
+    <!-- contorlado para manejar el recurso 'agregarArchivo.html' -->
+    <bean name="agregarArchivoaController" class="controllers.AddArchivoController"/>    
+    <!-- contorlado para manejar el recurso 'agregarProyecto.html' -->
+    <bean name="agregarProyectosController" class="controllers.AddProyectoController"/>    
+    <!-- contorlado para manejar el recurso 'agregarPInventario.html' -->
+    <bean name="agregarInventariosController" class="controllers.AddInventarioController"/>  
+      
+    <!-- contorlado para manejar el recurso 'editarArchivos.html' -->
+    <bean name="editarArchivosController" class="controllers.UploadArchivoController"/>     
+    <!-- contorlado para manejar el recurso 'editarEmpresa.html' -->
+    <bean name="editarEmpresasController" class="controllers.UploadEmpresaController"/>         
+    <!-- contorlado para manejar el recurso 'editarInvetario.html' -->
+    <bean name="editarInventariosController" class="controllers.UploadInventarioController"/>     
+    <!-- contorlado para manejar el recurso 'editarPersona.html' -->
+    <bean name="editarPersonassController" class="controllers.UploadPersonaController"/> 
+    <!-- contorlado para manejar el recurso 'editarProyecto.html' -->
+    <bean name="editarProyectossController" class="controllers.UploadProyectoController"/>     
+
 </beans>
