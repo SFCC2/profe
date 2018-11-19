@@ -52,7 +52,13 @@
                 <prop key="listarPersona.html">listarPersonassController</prop>                 
                 <prop key="listarProyecto.html">listarProyectossController</prop> 
                 
-                                                                
+                 <prop key="filtrarArchivo.html">filtrarArchivosController</prop> 
+                <prop key="filtrarEmpresa.html">filtrarEmpresasController</prop>                  
+                <prop key="filtrarInvetario.html">filtrarInventariosController</prop> 
+                <prop key="filtrarPersona.html">filtrarPersonassController</prop>                 
+                <prop key="filtrarProyecto.html">filtrarProyectossController</prop> 
+                
+                             
             </props>
         </property>
     </bean>
@@ -117,4 +123,14 @@
     <!-- contorlado para manejar el recurso 'listarProyecto.html' -->
     <bean name="listarProyectossController" class="controllers.ChecklistProyectoController"/>  
     
+    <!-- contorlado para manejar el recurso 'filtrarArchivos.html' -->
+    <bean name="filtrarArchivosController" class="controllers.FiltrateArchivoController"/>     
+    <!-- contorlado para manejar el recurso 'filtrarEmpresa.html' -->
+    <bean name="filtrarEmpresasController" class="controllers.FiltrateEmpresaController"/>         
+    <!-- contorlado para manejar el recurso 'filtrarInvetario.html' -->
+    <bean name="filtrarInventariosController" class="controllers.FiltrateInventarioController"/>     
+    <!-- contorlado para manejar el recurso 'filtrarPersona.html' -->
+    <bean name="filtrarPersonassController" class="controllers.FiltratePersonaController"/> 
+    <!-- contorlado para manejar el recurso 'filtrarProyecto.html' -->
+    <bean name="filtrarProyectossController" class="controllers.FiltrateProyectoController"/>  
 </beans>
