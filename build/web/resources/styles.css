@@ -41,3 +41,7 @@ limitations under the License.
     width: 100%;
     font-weight: bold;
 }
+
+.panel {
+   width: 70%;
+}

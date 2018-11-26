@@ -17,6 +17,7 @@ package controllers;
 
 import ORM.Persona;
 import interfaces.ATGSController;
+import java.util.ArrayList;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -28,7 +29,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class AddPersonsController implements ATGSController{
-
+private ArrayList<Persona> PersonasDao;
     @Override
     @RequestMapping("agregarPersona.html")
     public ModelAndView showView() {

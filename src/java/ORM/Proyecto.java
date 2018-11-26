@@ -73,6 +73,5 @@ public class Proyecto {
     public void setFechaRealizada(String fechaRealizada) {
         this.fechaRealizada = fechaRealizada;
     }
-    
-    
+
 }

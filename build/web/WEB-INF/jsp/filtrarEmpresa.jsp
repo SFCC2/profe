@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Principal
-    Created on : 18/11/2018, 09:17:19 PM
+    Document   : filtrarEmpresa
+    Created on : 18/11/2018, 09:01:19 PM
     Author     : Sulay2016
 --%>
 
@@ -8,12 +8,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="resources/styles.css"/>
-        <title>ATGS - PrincipaL</title>
+        <title>ATGS - Flitrar Empresa</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>filtrar Empresa</h1>
     </body>
 </html>

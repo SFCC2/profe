@@ -45,19 +45,34 @@
                 <prop key="eliminarEmpresa.html">eliminarEmpresasController</prop>   
                 <prop key="eliminarInventario.html">eliminarInventariosController</prop>
                 <prop key="eliminarProyecto.html">eliminarProyectosController</prop> 
+                 <prop key="eliminarPersona.html">eliminarPersonaController</prop>  
                 
-                 <prop key="listarArchivo.html">listarArchivosController</prop> 
+                <prop key="listarArchivo.html">listarArchivosController</prop> 
                 <prop key="listarEmpresa.html">listarEmpresasController</prop>                  
                 <prop key="listarInventario.html">listarInventariosController</prop> 
                 <prop key="listarPersona.html">listarPersonassController</prop>                 
                 <prop key="listarProyecto.html">listarProyectossController</prop> 
                 
-                 <prop key="filtrarArchivo.html">filtrarArchivosController</prop> 
+                <prop key="filtrarArchivo.html">filtrarArchivosController</prop> 
                 <prop key="filtrarEmpresa.html">filtrarEmpresasController</prop>                  
                 <prop key="filtrarInvetario.html">filtrarInventariosController</prop> 
                 <prop key="filtrarPersona.html">filtrarPersonassController</prop>                 
                 <prop key="filtrarProyecto.html">filtrarProyectossController</prop> 
                 
+                <prop key="Archivo.html">ArchivosController</prop> 
+                <prop key="Empresa.html">EmpresaController</prop> 
+                <prop key="Inventario.html">InventarioController</prop> 
+                <prop key="Persona.html">PersonaController</prop> 
+                <prop key="Proyecto.html">ProyectoController</prop> 
+                <prop key="Principal.html">PrincipalController</prop>  
+                
+                <!-- UN ALTERNATIVO EXPERIMENTAL -->
+                <prop key="Archivo.html">ArchivoDAOcontroller</prop> 
+                <prop key="Empresa.html">EmpresaDAOcontroller</prop> 
+                <prop key="Inventario.html">InventarioDAOcontroller</prop> 
+                <prop key="Persona.html">PersonaDAOcontroller</prop> 
+                <prop key="Proyecto.html">EmpresaDAOcontroller</prop> 
+                <prop key="Principal.html">ProyectoDAOcontroller</prop>        
                              
             </props>
         </property>
@@ -101,8 +116,10 @@
     <!-- contorlado para manejar el recurso 'editarPersona.html' -->
     <bean name="editarPersonassController" class="controllers.UploadPersonaController"/> 
     <!-- contorlado para manejar el recurso 'editarProyecto.html' -->
-    <bean name="editarProyectossController" class="controllers.UploadProyectoController"/>     
+    <bean name="editarProyectossController" class="controllers.UploadProyectoController"/>   
     
+      
+
     <!-- contorlado para manejar el recurso 'eliminarArchivos.html' -->
     <bean name="eliminarArchivosController" class="controllers.DeleteArchivoController"/>    
     <!-- contorlado para manejar el recurso 'eliminarEmpresa.html' --> 
@@ -111,8 +128,13 @@
     <bean name="eliminarInventariosController" class="controllers.DeleteInventarioController"/>          
     <!-- contorlado para manejar el recurso 'eliminarProyecto.html' --> 
     <bean name="eliminarProyectosController" class="controllers.DeleteProyectoController"/> 
+    <!-- contorlado para manejar el recurso 'eliminarPersona.html' -->
+    <bean name="eliminarPersonaController" class="controllers.DeletePersonaController"/> 
     
-     <!-- contorlado para manejar el recurso 'listarArchivos.html' -->
+    
+    
+    
+    <!-- contorlado para manejar el recurso 'listarArchivos.html' -->
     <bean name="listarArchivosController" class="controllers.ChecklistArchivoController"/>     
     <!-- contorlado para manejar el recurso 'listarEmpresa.html' -->
     <bean name="listarEmpresasController" class="controllers.ChecklistEmpresaController"/>         
@@ -133,4 +155,25 @@
     <bean name="filtrarPersonassController" class="controllers.FiltratePersonaController"/> 
     <!-- contorlado para manejar el recurso 'filtrarProyecto.html' -->
     <bean name="filtrarProyectossController" class="controllers.FiltrateProyectoController"/>  
+    
+    <!-- contorlado para manejar el recurso 'Archivo.html' -->
+    <bean name="ArchivosController" class="controllers.ArchivoController"/>  
+    <!-- contorlado para manejar el recurso 'Empresa.html' -->
+    <bean name="EmpresaController" class="controllers.EmpresaController"/>  
+    <!-- contorlado para manejar el recurso 'Inventario.html' -->
+    <bean name="InventarioController" class="controllers.InventarioController"/>  
+    <!-- contorlado para manejar el recurso 'Archivo.html' -->
+    <bean name="PersonaController" class="controllers.PersonaController"/>     
+    <!-- contorlado para manejar el recurso 'Archivo.html' -->
+    <bean name="ProyectoController" class="controllers.ProyectoController"/>   
+    <!-- contorlado para manejar el recurso 'Archivo.html' -->
+    <bean name="PrincipalController" class="controllers.PrincipalController"/>   
+    
+    
+    <!-- UN ALTERNATIVO EXPERIMENTAL     -->
+    <bean name="ArchivoDAOcontroller" class="controllers.DAOarchivoController"/>  
+    <bean name="EmpresaDAOcontroller" class="controllers.DAOempresaController"/>  
+    <bean name="InventarioDAOcontroller" class="controllers.DAOinventarioController"/>  
+    <bean name="PersonaDAOcontroller" class="controllers.DAOpersonController"/>
+    <bean name="ProyectoDAOcontroller" class="controllers.DAOproyectoController"/>    
 </beans>

@@ -23,11 +23,13 @@ public class Inventario {
    private int idInventario;
    private String nombre;
    private String descripcion;
+   private String funcion;
 
-    public Inventario(int idInventario, String nombre, String descripcion) {
+    public Inventario(int idInventario, String nombre, String descripcion, String funcion) {
         this.idInventario = idInventario;
         this.nombre = nombre;
         this.descripcion = descripcion;
+        this.funcion = funcion;
     }
 
     public int getIdInventario() {
@@ -53,6 +55,14 @@ public class Inventario {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-   
+
+    public String getFuncion() {
+        return funcion;
+    }
+
+    public void setFuncion(String funcion) {
+        this.funcion = funcion;
+    }
+
    
 }

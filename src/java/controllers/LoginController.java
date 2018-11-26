@@ -28,6 +28,9 @@ import org.springframework.web.servlet.ModelAndView;
  * 
  */
 
+
+import database.Database;
+
 @Controller
 public class LoginController implements ATGSController {
     
@@ -36,11 +39,20 @@ public class LoginController implements ATGSController {
     public ModelAndView showView()
     {
         
-        ModelAndView view = new ModelAndView();
+        //ModelAndView view = new ModelAndView();
         
-        view.setViewName("login");
+        //view.setViewName("login");
 
-        return view;
+        Database db = new Database();
+        
+        String frase = null;
+        
+        if (db.init())
+        {
+            frase = db.getQuery("alumnos", "estudiantes.count = 2", "count", "name", "course");
+        }
+        
+        return new ModelAndView("login", "frase", frase);
     }
     
 }
