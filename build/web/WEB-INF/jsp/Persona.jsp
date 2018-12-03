@@ -85,6 +85,12 @@
                 background-color: #555;
                 color: white;
             }
+            @media only screen and (max-width:620px) {
+                /* For mobile phones: */
+                .menu, .main, .right {
+                    width:100%;
+                }
+            }
 
         </style>
     </head>

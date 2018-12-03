@@ -17,14 +17,14 @@
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
-        <h1>Agregar Empresa</h1>
+        <h1>editar Empresa</h1>
         <div class="container">
             <div class="row centered-form">
                 <!--> <div class="col-xs-2 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"> <!-->  
                 <div class="col-xs-100 col-sm-100 col-md-100 col-sm-offset-100 col-md-offset-100">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Agregar Archivo<small>It's free!</small></h3>
+                            <h3 class="panel-title">Agregar Empresa</h3>
                         </div>
 
                         <div class="panel-body">
@@ -32,13 +32,10 @@
 
 
                                 <div class="form-group">
-                                    <input type="idArchivo" name="idArchivo" id="idArchivo" class="form-control input-sm" placeholder="ID del archivo">
+                                    <input class="form-control" id="disabledInput" type="text" placeholder="ID del Empresa" disabled>
                                 </div>
 
 
-                                <div class="form-group">
-                                    <input type="Fecha" name="Fecha" id="Fecha" class="form-control input-sm" placeholder="Fecha de realizacion">
-                                </div>
 
 
 
@@ -46,28 +43,22 @@
                                     <input type="nombre " name="nombre" id="nombre" class="form-control input-sm" placeholder="nombre">
                                 </div>
 
-                                <div class="form-group">
-                                    <input type="empresa " name="empresa" id="empresa" class="form-control input-sm" placeholder="ID empresa patrocinadora">
-                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
 
-                                <div class="form-group">
-                                    <input type="coordenadas " name="coordenadas" id="coordenadas" class="form-control input-sm" placeholder="coordenadas donde se realizo el archivo">
-                                </div>
-
-                                <form enctype="multipart/form-data" action="uploader.php" method="POST">
-                                    <div class="form-group">
-                                        <input name="uploadedfile" type="file" class="btn" />
+                                            <a href="Empresa.html" class="btn btn-info btn-block" role="button" aria-disabled="true">cancelar</a>
+                                        </div>
                                     </div>
 
-                                    <div class="form-group"Z>
-                                        <input type="submit" value="Subir archivo" class="btn"/>        
+
+
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <a href="Empresa.html" class="btn btn-info btn-block" role="button" aria-disabled="true">Registrar</a>
+                                        </div>
                                     </div>
-
-                                </form>
-
-
-                                <input type="submit" value="Register" class="btn btn-info btn-block">
-
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -77,3 +68,8 @@
 
     </body>
 </html>
+
+
+
+
+

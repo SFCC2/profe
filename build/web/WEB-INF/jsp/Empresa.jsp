@@ -14,8 +14,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <title>ATGS - Empresa</title>
-        
-            <style>
+
+        <style>
             * {
                 box-sizing: border-box;
             }
@@ -62,6 +62,14 @@
                 content: "";
                 display: table;
                 clear: both;
+                width: 75%;
+            }
+            
+               section2:after {
+                content: "";
+                display: table;
+                clear: both;
+                width: 25%;
             }
             ul {
                 list-style-type: none;
@@ -84,6 +92,12 @@
                 background-color: #04B404;
                 color: white;
             }
+            @media only screen and (max-width:620px) {
+                /* For mobile phones: */
+                .menu, .main, .right {
+                    width:100%;
+                }
+            }
 
         </style>
 
@@ -94,7 +108,7 @@
         <p>ASESORÍAS TÉCNICAS GEOLÓGICAS ATG LTDA.</p> 
     </div>
 
-   <section>
+    <section>
         <nav>
             <div class ="center clear">  
                 <ul>
@@ -112,28 +126,28 @@
             <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
         </article>
     </section>
-    
-    
-    
-    <div class="container " >
-        <div class="row">
-            <div class="col-sm-4 bg-white text-dark">
-                <h3>Column 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 2</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-                <h3>Column 3</h3>        
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+
+
+    <section2>
+        <div class="container " >
+            <div class="row">
+                <div class="col-sm-4 bg-white text-dark">
+                    <h3>Column 1</h3>
+                    <p>fOTO.</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Informacion General</h3>
+                    <p>Dirección: Transversal 16 BIS No. 45d -90</p>
+                    <p>Teléfonos: 2852980 - 3688604</p>
+                    <p> Celular: 311 506 1413 - 310 877 2557 </p>
+                    <p>Correo electrónico: atg@atgltda.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>IMPORTANTE</h3>        
+                    <p>La firma tiene experiencia de 20 años en la mayoría de zonas geográficas y cuencas sedimentarias del país.</p>
+                </div>
             </div>
         </div>
-    </div>
-
+    </section2>
 </body>
 </html>

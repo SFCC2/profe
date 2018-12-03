@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="resources/styles.css"/>
         <title>ATGS - Agregar Archivos</title>
 
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
@@ -21,61 +20,87 @@
     <body>
         <h1>Agregar Archivo</h1>
         <div class="container">
-            <div class="row centered-form">
-                <!--> <div class="col-xs-2 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"> <!-->  
-                <div class="col-xs-100 col-sm-100 col-md-100 col-sm-offset-100 col-md-offset-100">
-                    <div class="panel panel-default">
+            <div class="row">
+                <div class="col col-12 d-flex justify-content-center">
+                    <div class="panel panel-default" style="width: 70%;">
                         <div class="panel-heading">
-                            <h3 class="panel-title">Agregar Archivo<small>It's free!</small></h3>
+                            <h3 class="panel-title">Agregar Archivo</h3>
                         </div>
-
                         <div class="panel-body">
                             <form role="form">
+                                <div class="container-fluid">
 
 
-                                <div class="form-group">
-                                    <input type="idArchivo" name="idArchivo" id="idArchivo" class="form-control input-sm" placeholder="ID del archivo">
-                                </div>
-
-
-                                <div class="form-group">
-                                    <input type="Fecha" name="Fecha" id="Fecha" class="form-control input-sm" placeholder="Fecha de realizacion">
-                                </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="idArchivo" name="idArchivo" id="idArchivo" class="form-control input-sm" placeholder="ID Archivo inngresar ">
+                                            </div>
+                                        </div>
 
 
 
-                                <div class="form-group">
-                                    <input type="nombre " name="nombre" id="nombre" class="form-control input-sm" placeholder="nombre">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="empresa " name="empresa" id="empresa" class="form-control input-sm" placeholder="ID empresa patrocinadora">
-                                </div>
-
-                                <div class="form-group">
-                                    <input type="coordenadas " name="coordenadas" id="coordenadas" class="form-control input-sm" placeholder="coordenadas donde se realizo el archivo">
-                                </div>
-
-                                <form enctype="multipart/form-data" action="uploader.php" method="POST">
-                                    <div class="form-group">
-                                        <input name="uploadedfile" type="file" class="btn" />
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="nombre" name="nombre" id="nombre" class="form-control input-sm" placeholder="Nombre Archivo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="fecha" name="fecha" id="fecha" class="form-control input-sm" placeholder="Fecha Realizacion">
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div class="form-group"Z>
-                                        <input type="submit" value="Subir archivo" class="btn"/>        
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="Empresa" name="Empresa" id="Empresa" class="form-control input-sm" placeholder="Empresa Patrocinadora digitar">
+                                            </div>
+                                        </div>
                                     </div>
 
-                                </form>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="coordenadas" name="coordenadas" id="coordenadas" class="form-control input-sm" placeholder="coordenadas origen del archivo digitar">
+                                            </div>
+                                        </div>
+                                    </div>
 
 
-                                <input type="submit" value="Register" class="btn btn-info btn-block">
+                                 
+                                    
+                                    
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                
+                                                <a href="Archivo.html" class="btn btn-info btn-block" role="button" aria-disabled="true">cancelar</a>
+                                            </div>
+                                        </div>
 
-                            </form>
+
+
+                                        <div class="col">
+                                            <div class="form-group">
+                                                 <a href="Archivo.html" class="btn btn-info btn-block" role="button" aria-disabled="true">Registrar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
 
     </body>
 </html>

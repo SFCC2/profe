@@ -27,6 +27,12 @@
                 background-color: #04B404;
                 color: white;
             }
+            @media only screen and (max-width:620px) {
+                /* For mobile phones: */
+                .menu, .main, .right {
+                    width:100%;
+                }
+            }
         </style>
 
 
@@ -34,10 +40,9 @@
     </head>
     <body>
 
-
         <div class="jumbotron text-center bg-white text-dark" style="margin-bottom:0">
-            <h1>seccion de proyectos</h1>
-            <p>Resize this responsive page to see the effect!</p> 
+            <h1>Seccion de Proyectos</h1>
+            <p>ASESORÍAS TÉCNICAS GEOLÓGICAS ATG LTDA.</p> 
         </div>
 
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">

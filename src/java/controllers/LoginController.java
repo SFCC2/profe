@@ -49,6 +49,9 @@ public class LoginController implements ATGSController {
         
         if (db.init())
         {
+            
+            
+            //  frase = db.getQuery("tabla", "where .estudiantes.count = 2", "count", "name", "course");
             frase = db.getQuery("alumnos", "estudiantes.count = 2", "count", "name", "course");
         }
         
